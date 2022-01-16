@@ -1,0 +1,50 @@
+package labTest;
+import java.util.Scanner;
+public class quiz2Question2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		
+		
+		System.out.print("Enter the item's amount: ");
+		int itemNum = scan.nextInt();
+		
+		int item[] = new int[itemNum];
+		
+		System.out.print("Enter the item's value: ");
+		for(int x=0;x<items.length;x++) {
+			item[x] = scan.nextInt();
+		}
+		
+		for(int i = 0; i < itemNum; i++)
+		{
+			System.out.print(i + ":");
+			
+			for(int a = 0; a < item[i]; a++)
+			{
+				System.out.print("*");
+			}
+			System.out.print("(" + item[i] + ")");
+			System.out.println();
+		
+		}
+	}
+
+}
+
+
+Output:
+
+Enter the item's amount: 5
+Enter the item's value: 7
+4
+3
+0
+7
+0:*******(7)
+1:****(4)
+2:***(3)
+3:(0)
+4:*******(7)
