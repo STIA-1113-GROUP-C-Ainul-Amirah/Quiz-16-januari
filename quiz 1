@@ -1,0 +1,71 @@
+package labTest;
+import java.util.Scanner;
+public class kuiz1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner (System.in);
+		
+		int salary1, salary2, salary3, salary4;
+		int year,year1,year2,year3;
+		double bonus;
+		System.out.println("Please Enter your salary: ");
+		salary1=scan.nextInt();
+		
+		
+		System.out.println("Please Enter your services's year: ");
+		year=scan.nextInt();
+		
+		
+			if(year>3) {
+					bonus=5*salary1;
+			System.out.println("Your Bonus is: "+bonus);
+		
+			}else {
+				bonus=0*salary1;
+			System.out.println("Sorry! you got no bonus. ");
+		}
+			
+			
+		
+			
+			
+			int highest=Integer.MIN_VALUE;
+			int lowest=Integer.MAX_VALUE;
+
+			System.out.println("Enter salary : RM ");
+			int salary = scan.nextInt();
+			
+			if(salary > highest){
+			    lowest = highest;
+			    highest = salary;
+			}
+
+			if (salary < lowest){
+			    highest=lowest;
+			    lowest=salary;
+			}
+
+			System.out.println("Highest salary: RM" + highest);
+			
+
+}
+}
+
+
+
+OUTPUT
+
+
+Please Enter your salary: 
+3000
+Please Enter your services's year: 
+6
+Your Bonus is: 15000.0
+Enter salary : RM 
+4000
+Highest salary: RM4000
+Enter ages:  
+28
+Highest age:30
+Lowest age23
